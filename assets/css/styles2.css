@@ -1,0 +1,91 @@
+/*
+1. Crear un documento html y vincular css
+2. Crear una estructura css con un contenedor general, header, sidebar, seccion contenido, footer y menu
+3. Todo el contenido debe estar dentro del contenedor general su acho sera 1200px y estar centrado, header
+debe ocupar el 100% del ancho y tener el texto centrado
+4. El menu debe tener los elementos uno al lado del otro
+5. El contenido ppal debe tener un ancho del 70%
+6. El contenido dentro del contenedor debe ser una cuadricula con 4 lineas de 2 cajas
+7. La barra lateral debe tener un ancho del 30%
+8. El Footer debe tener un ancho del 100% y estar abajo
+*/
+*{
+    margin: 0px;
+    text-decoration: none;
+}
+#general{
+    width: 80%;
+    text-align: center;
+    border: 1px solid #cccc;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: rgb(123,123,123);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    line-height: 90px;
+}
+.menu{
+    width: 100%;
+    background: rgb(42, 11, 11);
+}
+.menu ul li{
+    display: block;
+    float:left;
+    margin: 2px;
+    padding: 10px;
+    border-left: 1px solid #cccc;
+}
+.menu ul li a{
+    color: #444444;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#contenido{
+    width: 68%;
+    float: left;
+}
+aside{
+    width: 30%;
+    border: 1px solid red;
+    float: left;
+    min-height: 300px;
+    text-align: center;
+    max-height: 550px;
+    overflow: scroll;
+}
+
+#contenido .caja{
+    width: 35%;
+    height: 250px;
+    background: gray;
+    border: 1px solid #cccc;
+    float: left;
+    margin: 5%;
+    line-height: 200px;
+    box-shadow: 0px 0px 6px blue;
+    border-radius: 5px;
+}
+
+#contenido h1{
+    text-align: center;
+    padding: 15px;
+    margin: 12px;
+    border: 1px solid green;
+    text-shadow: 1px 1px 2px gray;
+}
+footer{
+    width: 100%;
+    background: lightgray;
+    text-align: center;
+    height: 55px;
+    line-height: 55px;
+    border-top: 1px solid #ccc;
+}

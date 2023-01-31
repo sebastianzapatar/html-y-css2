@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--
+    En el head van las importaciones de datos e informacion de la pagina
+
+-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer HTML de Uparela</title>
+</head>
+<body><!--
+    En el body va todo lo que se muestra
+-->
+<a href="./bonita.html"><strong>Saltar la pagina</strong></a>
+<a href="./concss2.html">Blog</a>
+    <h1>Hola amigos</h1>
+    <p>
+        Lorem ipsum dolor sit amet <em>consectetur</em> adipisicing elit. Excepturi assumenda harum voluptatum quis corporis quod porro neque nihil, <br/>quo ut rerum similique aperiam<hr/>, <strong> reiciendis dolor</strong> recusandae possimus minus exercitationem!
+    </p>
+    <h2>Subtitulo</h2>
+    <h3>Subtitulo 2</h3>
+    <h4>Mas pequeno</h4>
+    <h5>Aun mas pequeno</h5>
+    <h6>Mas pequeno</h6>
+    <blockquote>Sigo intentando</blockquote>
+    <ol>
+        <li>Manzana</li>
+        <li>Papaya</li>
+        <li>Naranja</li>
+    </ol>
+    <ul>
+        <li>Tesla</li>
+        <li>BMW</li>
+        <li>Ferrari</li>
+        <li>
+            Jaguar
+            <ol type="i">
+                <li>Jaguar F-pace 2.0 Turbo Se</li>
+                <li>Jaguar E-pace 2.0 E-pace</li>
+                <li>Jaguar Xe 2.0 I4 Prestige </li>
+            </ol>
+        </li>
+    </ul>
+    <div>
+        <img src="./imgs/ferrari-sp38-one-off-4.jpg" alt="Ferrari" title="La primer imagen upacameno" width="300px"/>
+        <!--Explicar que se cuadra solo el width o el height no ambos-->
+    </div>
+    <hr/>
+    <table border="1">
+        <thead>
+            <th>
+                Nombre
+            </th>
+            <th>Apellido</th>
+            <th>Pais</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Sebastian
+                </td>
+                <td>
+                    Zapata
+                </td>
+                <td>
+                    Colombia
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Johan
+                </td>
+                <td>
+                    Velez
+                </td>
+                <td>
+                    Colombia
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Juan Jose
+                </td>
+                <td>Giraldo*Giraldo</td>
+                <td>Santuario</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Soy un formulario</h1>
+    <form action="" method="get">
+        <p>
+            <label>Nombre</label>
+            <input type="text" required id="nombre" name="nombre" placeholder="Escribe tu nombre"/>
+        </p>
+        <p>
+            <label>Fecha de Nacimiento</label>
+            <input type="date" name="fecha" id="fecha" required placeholder="Fecha de nacimiento"/>
+        </p>
+        <p>
+            <label>Genero</label>
+            <input type="radio" name="genero" value="hombre">hombre</input>
+            <input type="radio" name="genero" value="mujer">mujer</input>
+            <input type="radio" name="genero" value="otro">otro</input>
+        </p>
+        <p>
+            <select name="pais">
+                <option value="-----"></option>
+                <option value="Colombia">Colombia</option>
+                <option value="Chile">Chile</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+            </select>
+        </p>
+        <input type="submit" value="Enviar"></input>
+        <input type="reset" value="Borrar datos"/>
+    </form>
+</body>
+</html>
