@@ -1,0 +1,74 @@
+
+.container{
+    align-items: center;
+    background: pink;
+    display: flex;
+    flex-direction: row;/*Explicar row-reverse, column y column reverse*/
+    flex-wrap: wrap;/*Para que se acomode en diferentes lineas*/
+    gap: 2%;
+    height: 200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 70%;
+}
+.container div{
+    align-items: center;
+    background: green;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    justify-content: center;
+}
+.flex1{
+    width: 20%;
+}
+
+.flex2{
+    width: 30%;
+}
+
+
+.flex3{
+    width: 20%;
+}
+
+.flex4{
+    width: 20%;
+}
+@media (max-width: 500px)  {
+    .container{
+        align-items: center;
+        background: green;
+        display: flex;
+        flex-direction: column;/*Explicar row-reverse, column y column reverse*/
+        gap: 2%;
+        margin: 0 auto;
+        width: 70%;
+    }
+    .container div{
+        background: blue;
+        color: white;
+        height: 100px;
+    }
+    /*
+    Explicar flex-grow para que vaya creciendo
+    */
+    .flex1{
+        
+        width: 70%;
+    }
+    
+    .flex2{
+        width: 70%;
+    }
+    
+    
+    .flex3{
+        width: 70%;
+    }
+    
+    .flex4{
+        width: 70%;
+    }
+}
